@@ -1,0 +1,16 @@
+{
+  "name": "ywca-workspace",
+  "version": "0.0.1",
+  "description": "YWCA Workspace for Jen Esquivel",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:JenEEsquivel/ywebca.git"
+  },
+  "author": {
+    "name": "Jen Esquivel",
+    "email": "jeneesquivel@gmail.com",
+    "url": "https://github.com/JenEEsquivel"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
