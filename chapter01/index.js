@@ -364,7 +364,7 @@ Exercises.coercion1 = function () {
 // expression that evaluates to -5.
 Exercises.coercion2 = function () {
 
-  return "-1" * "2", - "3" ;
+  return "-1" * "2" - "3" ;
   
 };
 
