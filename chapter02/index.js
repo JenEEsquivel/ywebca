@@ -5,7 +5,7 @@
 // evaluated value is not undefined.
 Exer.expressions1 = function () {
 
-  return /* your answer here */ ;
+  return   (2 * 3) ;
 
 };
 
@@ -13,7 +13,7 @@ Exer.expressions1 = function () {
 // Statements 1
 Exer.statements1 = function () {
 
-  // Write a statement that is not undefined.
+  1 == 1;
 
 };
 /* jshint ignore:end */
@@ -23,20 +23,25 @@ Exer.statements1 = function () {
 // Variables 1
 Exer.variables1 = function () {
 
-  // Write a statement that declares a variable.
+  var ten;
 
-  // Return that variable.
+  return ten;
 
 };
 
 // Variables 2
 Exer.variables2 = function () {
 
-  // Write a statement that declares a variable.
+  // Write a statement that declares a variable. 
 
   // Write a statement to assign a number value to your variable.
 
   // Return the variable.
+  var ten;
+
+  ten = 10;
+
+  return ten;
 
 };
 
@@ -47,12 +52,16 @@ Exer.variables3 = function () {
 
   // Return the variable.
 
+  var ten = "ten";
+  return ten;
+
 };
 
 // Variables 4
 Exer.variables4 = function ( n ) {
 
   // Return the parameter.
+ return n;
 
 };
 
@@ -62,6 +71,9 @@ Exer.variables5 = function ( n ) {
   // Declare a new variable and initialize it to the value of `n`.
 
   // Return the new variable.
+
+  var Jen = n;
+  return Jen;
 
 };
 
@@ -74,7 +86,11 @@ Exer.variables6 = function ( stacys ) {
   // Stacy gives you more apples
   // (the parameter `stacys`)
 
-  // Return the total number of apples you have.
+  // Return the total number of apples you have.   apples +=stacys is like apples = apples + stacys
+
+  var apples = 3;
+  apples += stacys;
+  return apples;
 
 };
 
@@ -92,6 +108,10 @@ Exer.variables7 = function ( change ) {
 
   // Return that string.
 
+  change += .25;
+  change -= .10;
+  var remaining = "$" + change; 
+  return remaining;
 };
 
 
@@ -100,28 +120,26 @@ Exer.variables7 = function ( change ) {
 // Keywords 1
 // Uncomment the following function by removing the slash-asterisk pairs.
 // Fix the function so no keywords or reserved words are improperly used.
-/*
-Exer.keywords1 = function ( true, two ) {
-  var new = 2;
-  var const = two+2;
-  true += "2";
-  var function = new + const + true + two;
-  return function;
+
+Exer.keywords1 = function ( True, two ) {
+  var New = 2;
+  var Const = two+2;
+  True += "2";
+  var functions = New + Const + True + two;
+  return functions;
 };
-*/
 
 /*--------------------------    THE ENVIRONMENT    ---------------------------*/
 
 // Enviroment 1
-// Uncomment the line that does not return an evironment variable.
+// Uncomment the line that does not return an environment variable.
 Exer.environment1 = function () {
 
   // return window;
   // return document;
   // return history;
-  // return browser;
+  return browser;
   // return navigator;
-
 };
 
 /*------------------------------    FUNCTIONS    -----------------------------*/
@@ -133,7 +151,9 @@ Exer.environment1 = function () {
 Exer.functions1 = function (recombobulate, setPowerLevel, cornTortilla) {
 
   // Your work here
-
+  recombobulate();
+  setPowerLevel(9001);
+  cornTortilla("chicken", "queso", "bacon", "lime");
 };
 
 
@@ -142,12 +162,15 @@ Exer.functions1 = function (recombobulate, setPowerLevel, cornTortilla) {
 // Console 1
 Exer.console1 = function () {
 
+console.log(1);
   // Output something to the console.
 
 };
 
 // Console 2
 Exer.console2 = function ( printme ) {
+
+  console.log(printme);
 
   // Print the parameter `printme` to the console.
 
@@ -162,6 +185,8 @@ Exer.console3 = function ( data ) {
 
   // your answer here
 
+  var x = 'The magic word is "' + data+'"';
+  console.log(x);
 };
 
 // Console 4
@@ -170,6 +195,7 @@ Exer.console4 = function () {
   // Use comma-separated values to output two things to the console with one
   // call.
 
+ console.log("x", "y");
 };
 
 // Console 5
@@ -179,7 +205,8 @@ Exer.console5 = function ( x, y ) {
   // Output the first parameter `x` to the console.
 
   // Make the function return the parameter `y` plus 1.
-
+  console.log(x);
+  return y + 1;
 };
 
 /*---------------------------    RETURN VALUES    ----------------------------*/
@@ -189,12 +216,15 @@ Exer.console5 = function ( x, y ) {
 Exer.return1 = function () {
 
   // your work goes here
-
+ console.log(magicFunc());
 };
 
 // Return 2
 // Call and return the result of `magicFunc`.
 Exer.return2 = function () {
+
+  console.log(magicFunc);
+  return magicFunc;
 
   // your work goes here
 
@@ -207,12 +237,16 @@ Exer.return3 = function () {
 
   // Return that same result with "123" concatenated to the end.
 
+  strShift(abczABCZ);
+  "abczABCZ" + "123";
+
 };
 
 // Return 4
 // Log the result of the string concatenation of two separate calls to
 // `magicFunc`.
 Exer.return4 = function () {
+   console.log(magicFunc) + console.log(magicFunc);
 
   // your work goes here
 
@@ -309,6 +343,8 @@ Exer.condition2 = function ( temperature ) {
 
   // In either case, also print
   //     Thanks for visiting Pier One and Three Quarters!
+
+
 
 };
 
