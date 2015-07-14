@@ -150,17 +150,19 @@ Exercises.strings3 = function () {
 
 // Strings 4
 // Return the string
-//     'If a string is in single quotes, like this,
-//     you can nest "double quotes".
-//     But don\'t forget to escape your \backslashes\
-//     so you can type "\n"!'
+//'If a string is in single quotes, like this,
+//you can nest "double quotes."
+//But don\'t forget to escape your \backslashes\
+//so you can type "\n"!'
+
+
 // (including the enclosing single quotes).
 Exercises.strings4 = function () {
 
   var answer;
 
   // Uncomment the following line and type your answer:
-  var answer = "'If a string is in single quotes,\nlike this, you can nest \"double quotes\".\nBut don\\'t forget to escape your \\backslashes\\\nso you can type \"\\n\"!'";
+  answer = "'If a string is in single quotes, like this,\nyou can nest \"double quotes\".\nBut don\\'t forget to escape your \\backslashes\\\nso you can type \"\\n\"!'";
 
   // Then check the console in spec.html to debug.
   
@@ -315,7 +317,7 @@ Exercises.logic5 = function () {
 // 1 + 1 == 2 && 10 * 10 > 50
 
   // Return the result:
-  return console.log(1 + 1 == 2 && 10 * 10 > 50);
+  return (1 + 1 == 2 && 10 * 10 > 50);
 
 };
 
@@ -337,7 +339,7 @@ Exercises.undef1 = function () {
 
   // Fix the statements so that undefined is returned.
 
-  return true ;
+  return undefined ;
 
 };
 
@@ -408,8 +410,9 @@ Exercises.coercion6 = function () {
 // to true.
 Exercises.coercion7 = function () {
 
-  return -0 == -("0") == false == undefined == null == NaN ;
+  //return -0 == -("0") == false == undefined == null == NaN ;
   
+  return false !== ("0" || 0 || undefined || null || NaN);
 };
 
 // Coercion 8
@@ -425,11 +428,11 @@ Exercises.coercion8 = function () {
 // Circuit 1
 // Short-circut the expression so the bad function does not get called.
 Exercises.circuit1 = function () {
-  return true && true && true && badFunction();
+  return true && true && false && badFunction();
 };
 
 // Circuit 2
 // Short-circut the expression so the bad function does not get called.
 Exercises.circuit2 = function () {
-  return false || false || false || badFunction();
+  return false || false || true || badFunction();
 };
