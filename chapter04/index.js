@@ -1,33 +1,51 @@
 /*-----------------------------    DATA SETS    -----------------------------*/
 
 /*****************************    Data Sets 1    *****************************/
-
+function (dataOne);
+consolelog: []
 
 
 /*****************************    Data Sets 2    *****************************/
 
+function (dataTwo) = [];
 
 
 /*-----------------------------    PROPERTIES    ----------------------------*/
 
+function (properties) = [.barksound .legs .isAGoodBoy] {
+  console.log (.legs .isAGoodBoy);
 
 
 
 /*-------------------------------    METHODS    -----------------------------*/
 
-
-
+function (methods) {}
+  methods = setBark(), .getBark(),
+.bark(), and .isAGoodBoy()
+}
+/*confused*/
 /*-------------------------------    OBJECTS    -----------------------------*/
 
-
-
+function(objects) {
+var = barksound (.BARK!)
+/*continue working*/
+}
 /*----------------------------    MUTABILITY    -----------------------------*/
 
+function(mutability) {
 
+  mutability = (.color, .quantity, .isA);
+  if ==
+    consolelog(mutability);
+  else 
+    consolelog
+}
 
 /*--------------------------    OBJECTS AS MAPS    --------------------------*/
 
+function(maps) {
 
+}
 
 /*----------------------------    ARRAYOLOGY    -----------------------------*/
 
