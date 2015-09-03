@@ -1,4 +1,16 @@
+var reverseArray = function ( arr ) {
+  var result = [];
+  for ( var i = 0; i < arr.length; i++ )
+    result.unshift( arr[i] );
+  return result;
 
+};
+
+
+var reverseArrayInPlace = function ( arr ) {
+  for ( var i = 0; < arr.length  / 2; i++) {}
+  return arr;
+};
 
 
 
